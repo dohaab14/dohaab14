@@ -47,8 +47,7 @@ I love turning ideas into practical tools that people can use. I enjoy bringing 
 
 ### 🌷 My contributions, in pastel
 
-![Pastel contribution snake](https://raw.githubusercontent.com/dohaab14/dohaab14/pastel-output/dist/pastel-snake.svg)
-
+![Pastel contributions](https://raw.githubusercontent.com/dohaab14/dohaab14/pastel-output/dist/pastel-snake.svg)
 <div align="center">
 
 ---
