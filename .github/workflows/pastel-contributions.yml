@@ -1,0 +1,38 @@
+name: Pastel contributions
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pastel-contributions
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate pastel contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: dohaab14
+          outputs: |
+            dist/pastel-snake.svg?color_snake=#B39DDB&color_dots=#F7F3F8,#FFF1B8,#F5D0DF,#D8CEF5,#B39DDB
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish generated image
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch --orphan pastel-output
+          git add -f dist/pastel-snake.svg
+          git commit -m "Update pastel contribution animation"
+          git push origin HEAD:pastel-output --force
