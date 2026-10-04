@@ -54,7 +54,7 @@ I love turning ideas into practical tools that people can use. I enjoy bringing 
 
 [Explore my repositories ↗](https://github.com/dohaab14?tab=repositories)
 
-<sub>soft colors · useful ideas · thoughtful code ✨</sub>
+<sub> ✨ enjoying life ✨</sub>
 
 ![Pastel wave](https://capsule-render.vercel.app/api?type=waving&color=0:F5D0DF,50:FFF1B8,100:D8CEF5&height=90&section=footer)
 
